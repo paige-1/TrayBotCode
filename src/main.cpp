@@ -54,7 +54,12 @@ void usercontrol( void ) {
   // User control code here, inside the loop
 
   // Start drive functions
-  vex::thread driveControl(drive);
+  vex::thread driveTask(drive);
+  vex::thread spinIntakeTask(spinIntake);
+  vex::thread moveArmTask(moveArm);
+  vex::thread moveTrayTask(moveTray);
+  arm.setBrake(vex::brakeType::hold);
+
   while (1) {
     // This is the main execution loop for the user control program.
     // Each time through the loop your program should update motor + servo 

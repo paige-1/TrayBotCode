@@ -1,7 +1,5 @@
 // Include VEX globals
-#include "./vex_global.h"
-#include "./vex_motorgroup.h"
-#include "./vex_triport.h"
+
 #include "vex.h"
 
 #include <cmath>
@@ -16,8 +14,8 @@ vex::competition Competition;
 vex::controller Controller;
 
 //List all motors
-vex::motor frontRight (vex::PORT10, true); 
-vex::motor frontLeft (vex::PORT9, true);
+vex::motor frontRight (vex::PORT10, false); 
+vex::motor frontLeft (vex::PORT9, false);
 vex::motor backRight (vex::PORT8, false);
 vex::motor backLeft (vex::PORT7, false); 
 
