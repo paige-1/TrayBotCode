@@ -1,7 +1,6 @@
 /*----------------------------------------------------------------------------*/
 /*    Description:  V5 project                                                */
 /*----------------------------------------------------------------------------*/
-#include "vex.h"
 #include "user_control.h"
 
 using namespace vex;
@@ -79,9 +78,9 @@ void usercontrol( void ) {
 //
 int main() {
     //Set up callbacks for autonomous and driver control periods.
-    Competition.autonomous( autonomous );
+    Competition.autonomous( RedAuto );
     Competition.drivercontrol( usercontrol );
-    
+
     //Run the pre-autonomous function. 
     pre_auton();
        
