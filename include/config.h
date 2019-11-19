@@ -26,7 +26,6 @@ vex::motor rightIntakeFlipper (vex::PORT3, true);
 vex::motor leftIntakeFlipper (vex::PORT18, false);
 
 // Sensors
-vex::pot trayPot (Brain.ThreeWirePort.A);
-vex::limit trayLimit (Brain.ThreeWirePort.B);
+vex::limit trayLimit (Brain.ThreeWirePort.C);
 
 

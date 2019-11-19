@@ -102,16 +102,50 @@ void moveArm() {
 void moveTray() {
 
     int pct = 0;
+    double motorRotation = 0;
+    int limitSwitchPressed = 0;
+double targetRotations = 4;
   while(1) {
 
     //test stuff
     if (Controller.ButtonL2.pressing()){
       pct = 95;
+        if((tray.position(rotationUnits::rev)>targetRotations)){
+    pct = 65;
+  } else { 
+    pct= 95;
+  }
     } else if (Controller.ButtonL1.pressing()){
       pct = -95;
+        if((tray.position(rotationUnits::rev)>targetRotations)){
+        pct = -65;
+      } else { 
+        pct= -95;
+      }
     } else {
       pct = 0;
     }
+
+    // making the tray slow down when it reaches a certain heiht,
+    // counting motor rtoattions when limit switch is not being pressed
+    // when limit switch is pressed, set rotaions to zero
+
+    if ( trayLimit.value() == 1){
+    tray.resetRotation();
+
+    }
+  if((tray.position(rotationUnits::rev)>6)){
+    pct = 65;
+  } else { 
+    pct= 95;
+
+  }
+  
+  
+    
+  
+
+
 
     
     if (pct!= 0) {
