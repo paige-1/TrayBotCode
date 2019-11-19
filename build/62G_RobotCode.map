@@ -771,8 +771,6 @@ Discarded input sections
                 0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
  .rodata._ZN3vex3redE
                 0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
- .rodata._ZN3vex5PORT3E
-                0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
  .rodata._ZN3vex5PORT1E
                 0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
  .bss._ZN3vex7celsiusE
@@ -846,6 +844,8 @@ Discarded input sections
  .bss._ZN3vex7secondsE
                 0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
  .data._ZN3vex5rightE
+                0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
+ .rodata._ZN3vex5PORT2E
                 0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
  .data._ZN3vex10rumbleLongE
                 0x0000000000000000        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
@@ -2592,24 +2592,24 @@ Linker script and memory map
  .rodata.str1.1
                 0x0000000003802db0       0x2e /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(v5_startup.c.obj)
  *fill*         0x0000000003802dde        0x2 
- .rodata._ZN3vex6PORT10E
+ .rodata._ZN3vex5PORT3E
                 0x0000000003802de0        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
-                0x0000000003802de0                vex::PORT10
- .rodata._ZN3vex5PORT7E
+                0x0000000003802de0                vex::PORT3
+ .rodata._ZN3vex6PORT10E
                 0x0000000003802de4        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
-                0x0000000003802de4                vex::PORT7
- .rodata._ZN3vex6PORT18E
+                0x0000000003802de4                vex::PORT10
+ .rodata._ZN3vex5PORT7E
                 0x0000000003802de8        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
-                0x0000000003802de8                vex::PORT18
- .rodata._ZN3vex6PORT11E
+                0x0000000003802de8                vex::PORT7
+ .rodata._ZN3vex6PORT18E
                 0x0000000003802dec        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
-                0x0000000003802dec                vex::PORT11
- .rodata._ZN3vex5PORT9E
+                0x0000000003802dec                vex::PORT18
+ .rodata._ZN3vex6PORT11E
                 0x0000000003802df0        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
-                0x0000000003802df0                vex::PORT9
- .rodata._ZN3vex5PORT2E
+                0x0000000003802df0                vex::PORT11
+ .rodata._ZN3vex5PORT9E
                 0x0000000003802df4        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
-                0x0000000003802df4                vex::PORT2
+                0x0000000003802df4                vex::PORT9
  .rodata._ZN3vex6PORT22E
                 0x0000000003802df8        0x4 /Applications/VEXcode V5 Text.app/Contents/Resources/sdk/vexv5/libv5rt.a(vex_global.cpp.obj)
                 0x0000000003802df8                vex::PORT22

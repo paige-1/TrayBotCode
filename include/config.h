@@ -22,7 +22,7 @@ vex::motor backLeft (vex::PORT11, false);
 vex::motor arm (vex::PORT4, false);
 vex::motor tray (vex::PORT19, true);
 
-vex::motor rightIntakeFlipper (vex::PORT2, true);
+vex::motor rightIntakeFlipper (vex::PORT3, true);
 vex::motor leftIntakeFlipper (vex::PORT18, false);
 
 // Sensors
